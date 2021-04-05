@@ -39,7 +39,7 @@
   }
 }
 .header__navbar__right {
-  width: 30%;
+  width: 20%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -99,4 +99,14 @@
   justify-content: flex-start;
   align-items: center;
   color: #a87419;
+}
+.header__info__middle {
+  color: #fad706;
+  flex: 1;
+  p {
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
 }
