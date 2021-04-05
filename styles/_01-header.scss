@@ -4,17 +4,34 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-bottom: solid 1px #2d2d2d;
 }
 .header__navbar {
   width: 80vw;
-  min-height: 10vh;
+  min-height: 5vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .header__navbar__left {
-  width: 30%;
+  width: 12%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  a {
+    height: 1.6rem;
+    width: 1.6rem;
+    border-radius: 50%;
+    color: #f5f5f5;
+    background-color: #2f2f2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: #a87419;
+    }
+  }
 }
