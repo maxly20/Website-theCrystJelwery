@@ -1,0 +1,20 @@
+.header {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header__navbar {
+  width: 80vw;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__navbar__left {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
