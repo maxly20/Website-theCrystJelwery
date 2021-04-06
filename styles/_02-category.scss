@@ -3,4 +3,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 3rem;
+}
+.category__thumbnail {
+  height: 240px;
+  width: 370px;
+  position: relative;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    overflow: hidden;
+  }
+}
+.category__description {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
 }

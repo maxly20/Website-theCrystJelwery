@@ -336,6 +336,10 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+  -webkit-animation: zoomin 40s ease;
+          animation: zoomin 40s ease;
 }
 
 .dotsbox {
@@ -432,13 +436,6 @@
   }
 }
 
-img {
-  -webkit-transform: scale(1.5, 1.5);
-          transform: scale(1.5, 1.5);
-  -webkit-animation: zoomin 40s ease;
-          animation: zoomin 40s ease;
-}
-
 @-webkit-keyframes zoomin {
   from {
     -webkit-transform: scale(1, 1);
@@ -479,6 +476,27 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 3rem;
+}
+
+.category__thumbnail {
+  height: 240px;
+  width: 370px;
+  position: relative;
+}
+
+.category__thumbnail img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  overflow: hidden;
+}
+
+.category__description {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
 }
 
 *,
