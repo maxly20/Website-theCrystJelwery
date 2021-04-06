@@ -319,6 +319,155 @@
   padding-bottom: 1rem;
 }
 
+.header__slider {
+  position: relative;
+  width: 100%;
+  background: #2f2f2f;
+}
+
+.myslide {
+  height: 480px;
+  display: none;
+  overflow: hidden;
+}
+
+.myslide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.dotsbox {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  bottom: 20px;
+  cursor: pointer;
+}
+
+.dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 3px solid rgba(255, 255, 255, 0.336);
+  border-radius: 50%;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.active,
+.dot:hover {
+  border-color: #a87419;
+}
+
+.fade {
+  -webkit-animation: fade 1.5s ease-in-out;
+          animation: fade 1.5s ease-in-out;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.txt {
+  position: absolute;
+  color: #fff;
+  letter-spacing: 2px;
+  line-height: 35px;
+  top: 40%;
+  left: 10vw;
+  -webkit-animation-name: posi;
+          animation-name: posi;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  z-index: 1;
+}
+
+.txt h1 {
+  color: #a87419;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.txt p {
+  font-size: 1rem;
+}
+
+.txt .slider_price span {
+  color: #a87419;
+}
+
+@-webkit-keyframes posi {
+  from {
+    left: 20vw;
+  }
+  to {
+    left: 10vw;
+  }
+}
+
+@keyframes posi {
+  from {
+    left: 20vw;
+  }
+  to {
+    left: 10vw;
+  }
+}
+
+img {
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+  -webkit-animation: zoomin 40s ease;
+          animation: zoomin 40s ease;
+}
+
+@-webkit-keyframes zoomin {
+  from {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  to {
+    -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
+  }
+}
+
+@keyframes zoomin {
+  from {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  to {
+    -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .txt h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+}
+
 *,
 *::before,
 *::after {

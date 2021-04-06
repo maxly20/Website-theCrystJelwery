@@ -16,7 +16,7 @@
             HEADER  
 =============================-->
     <section class="header">
-                <!-- NAVBAR  -->
+      <!-- NAVBAR  -->
       <div class="navbar__wrap">
         <nav class="header__navbar">
           <div class="header__navbar__left">
@@ -55,7 +55,7 @@
           </ul>
         </nav>
       </div>
-                  <!-- INFO  -->
+      <!-- INFO  -->
       <div class="header__info">
         <div class="header__info__left">
           <i class="fas fa-headphones"></i>
@@ -73,7 +73,7 @@
           </div>
         </div>
       </div>
-                  <!-- LINKS  -->      
+      <!-- LINKS  -->
       <ul class="header__links">
         <li>
           <a href="#">Home <i class="fas fa-chevron-down"></i></a>
@@ -118,8 +118,48 @@
           </ul>
         </li>
       </ul>
-                  <!-- SLIDER  -->      
-      <div class="header__slider"></div>
+      <!-- SLIDER  -->
+      <div class="header__slider">
+        <!-- fade css -->
+        <div class="myslide fade">
+          <div class="txt">
+            <h1>Necklace</h1>
+            <p>22 Carat gold necklace for wedding</p>
+            <p class="slider_price">
+              Starting at <span>$ 2,999</span>
+            </p>
+          </div>
+          <img src="./images/slider/1.png" />
+        </div>
+
+        <div class="myslide fade">
+          <div class="txt">
+            <h1>Earings and Pendants</h1>
+            <p>Complete bridal set with white pearls</p>
+            <p class="slider_price">
+              Starting at <span>$ 1,999</span>
+            </p>
+          </div>
+          <img src="./images/slider/2.jpg" />
+        </div>
+
+        <div class="myslide fade">
+          <div class="txt">
+            <h1>Necklace</h1>
+            <p>Cryst Special wedding rings for couples.</p>
+            <p class="slider_price">
+              Starting at <span>$ 7,999</span>
+            </p>
+          </div>
+          <img src="./images/slider/3.jpg" />
+        </div>
+
+        <div class="dotsbox" style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
     </section>
   </body>
 </html>
