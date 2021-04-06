@@ -8,13 +8,19 @@
 //======================
 //      NAVBAR
 //======================
+.navbar__wrap {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 1px #2d2d2d;
+}
 .header__navbar {
   width: 80vw;
   min-height: 5vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: solid 1px #2d2d2d;
+  //
 }
 .header__navbar__left {
   width: 12%;
@@ -157,11 +163,13 @@
 //      LINKS
 //======================
 .header__links {
-  min-height: 10vh;
+  min-height: 8vh;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-top: solid 1px #2d2d2d;
+  border-bottom: solid 1px #2d2d2d;
   li {
     list-style: none;
     position: relative;
@@ -170,6 +178,7 @@
     &:hover .sub-menu-2 {
       opacity: 1;
       visibility: visible;
+      background-color: rgb(37, 37, 37);
       transform: translateY(0);
     }
   }
