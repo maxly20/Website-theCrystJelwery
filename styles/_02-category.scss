@@ -9,15 +9,35 @@
   height: 240px;
   width: 370px;
   position: relative;
+  overflow: hidden;
+  cursor: pointer;
   img {
     height: 100%;
     width: 100%;
     object-fit: contain;
-    overflow: hidden;
+    transition: all 0.2s ease-out;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
 .category__description {
   position: absolute;
   left: 1rem;
   bottom: 1rem;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+  }
+  p {
+    font-weight: 300;
+  }
+  h3 {
+    color: #a87419;
+    font-weight: 400;
+    font-size: 1.6rem;
+  }
+  h4 {
+    font-weight: 400;
+  }
 }
