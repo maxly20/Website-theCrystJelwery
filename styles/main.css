@@ -110,6 +110,7 @@
   position: absolute;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  background-color: #252525;
   min-width: 200px;
   text-align: center;
   top: 125%;
@@ -127,7 +128,7 @@
 }
 
 .sub-menu li {
-  margin-top: 1rem;
+  margin-top: 0.6rem;
   padding-bottom: 1rem;
 }
 
@@ -288,7 +289,7 @@
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   overflow: hidden;
-  left: -154%;
+  left: -30%;
   z-index: 9999;
   padding: 0 15px;
   border-radius: 5px;
@@ -299,7 +300,7 @@
 }
 
 .sub-menu-2 li {
-  margin-top: 1rem;
+  margin-top: 0.6rem;
   padding-bottom: 1rem;
 }
 
