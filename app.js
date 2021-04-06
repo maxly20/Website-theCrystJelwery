@@ -44,3 +44,24 @@ function slidefun(n) {
   myslide[counter - 1].style.display = 'block';
   dot[counter - 1].className += ' active';
 }
+//===========================
+//      FEATURES TABS
+//===========================
+const $ = document.querySelector.bind(document);
+const $$ = document.querySelectorAll.bind(document);
+
+const tabs = $$('.tab-item');
+const panes = $$('.tab-pane');
+
+const tabActive = $('.tab-item.active');
+
+tabs.forEach((tab, index) => {
+  const pane = panes[index];
+
+  tab.onclick = function () {
+    $('.tab-item.active').classList.remove('active');
+    $('.tab-pane.active').classList.remove('active');
+    this.classList.add('active');
+    pane.classList.add('active');
+  };
+});
