@@ -540,6 +540,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 4rem;
+  border-top: 1px solid #2d2d2d;
 }
 
 .feature__container {
@@ -554,9 +556,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .tabs {
@@ -608,7 +610,72 @@
 }
 
 .tab-pane.active {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 70vw;
+}
+
+.tab__card {
+  width: 250px;
+  height: 363px;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.tab__card img {
+  width: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.tab__card img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.tab__card p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.507);
+}
+
+.tab__card h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.tab__card h4 {
+  color: #a87419;
+  font-weight: 500;
+  border-top: 1px solid #2d2d2d;
+  padding-top: 0.5rem;
+}
+
+.tab__card h4 span {
+  color: grey;
+  margin-right: 1rem;
+  font-weight: 300;
+  text-decoration: line-through;
 }
 
 *,
