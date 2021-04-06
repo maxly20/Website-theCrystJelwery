@@ -179,7 +179,7 @@
       opacity: 1;
       visibility: visible;
       background-color: rgb(37, 37, 37);
-      transform: translateY(0);
+      transform: perspective(600px) rotateX(0deg);
     }
   }
   a {
@@ -205,7 +205,8 @@
   border-radius: 5px;
   opacity: 0;
   visibility: hidden;
-  transform: translateY(40px);
+  transform: perspective(600px) rotateX(-90deg);
+  transform-origin: 0 0 0;
   li {
     margin-top: 0.6rem;
     padding-bottom: 1rem;

@@ -278,8 +278,8 @@
   opacity: 1;
   visibility: visible;
   background-color: #252525;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  -webkit-transform: perspective(600px) rotateX(0deg);
+          transform: perspective(600px) rotateX(0deg);
 }
 
 .header__links a {
@@ -308,8 +308,10 @@
   border-radius: 5px;
   opacity: 0;
   visibility: hidden;
-  -webkit-transform: translateY(40px);
-          transform: translateY(40px);
+  -webkit-transform: perspective(600px) rotateX(-90deg);
+          transform: perspective(600px) rotateX(-90deg);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
 }
 
 .sub-menu-2 li {
