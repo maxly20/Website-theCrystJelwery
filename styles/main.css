@@ -528,6 +528,24 @@
   font-weight: 400;
 }
 
+.feature {
+  min-height: 80vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feature__container {
+  width: 80vw;
+}
+
 *,
 *::before,
 *::after {
