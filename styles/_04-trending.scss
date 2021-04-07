@@ -35,4 +35,20 @@
     font-weight: 300;
     color: rgba(255, 255, 255, 0.361);
   }
+  button {
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+    color: #a87419;
+    border: 2px solid #a87419;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: white;
+      background-color: #a87419;
+    }
+  }
 }
