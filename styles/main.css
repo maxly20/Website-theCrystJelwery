@@ -683,6 +683,9 @@
   width: 100vw;
   margin-top: 4rem;
   background: url(../images/banner/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
 }
 
 .trending__content {
@@ -719,13 +722,14 @@
 
 .trending__content h2 {
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 400;
+  margin: 1rem 0;
 }
 
 .trending__content h4 {
   font-size: 1rem;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.473);
+  color: rgba(255, 255, 255, 0.361);
 }
 
 *,
