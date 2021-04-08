@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 // COLOR VARIABLE
-$background-color: #2f2f2f;
+$background-color: #252525;
 $text-color: #a87419;
+$border-color: #2d2d2d;
 
 // GLOBAL SETTINGS
 *,
@@ -14,7 +15,7 @@ $text-color: #a87419;
 }
 body {
   color: white;
-  background-color: #252525;
+  background-color: $background-color;
   display: flex;
   flex-direction: column;
   justify-content: center;
