@@ -1121,7 +1121,7 @@
 }
 
 .subscribe {
-  width: 40%;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1134,28 +1134,29 @@
 }
 
 .subscribe input {
-  width: 20rem;
+  width: 30rem;
   height: 2rem;
   background-color: transparent;
   border: 1px solid #2d2d2d;
   outline: none;
   color: white;
+  padding-left: 1.5rem;
 }
 
 .subscribe input::-webkit-input-placeholder {
-  padding-left: 1rem;
+  padding-left: 1.5rem;
 }
 
 .subscribe input:-ms-input-placeholder {
-  padding-left: 1rem;
+  padding-left: 1.5rem;
 }
 
 .subscribe input::-ms-input-placeholder {
-  padding-left: 1rem;
+  padding-left: 1.5rem;
 }
 
 .subscribe input::placeholder {
-  padding-left: 1rem;
+  padding-left: 1.5rem;
 }
 
 .subscribe button {

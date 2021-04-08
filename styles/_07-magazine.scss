@@ -42,19 +42,20 @@
   }
 }
 .subscribe {
-  width: 40%;
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
   input {
-    width: 20rem;
+    width: 30rem;
     height: 2rem;
     background-color: transparent;
     border: 1px solid #2d2d2d;
     outline: none;
     color: white;
+    padding-left: 1.5rem;
     &::placeholder {
-      padding-left: 1rem;
+      padding-left: 1.5rem;
     }
   }
   button {
