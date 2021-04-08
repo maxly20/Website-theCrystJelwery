@@ -71,3 +71,51 @@ tabs.forEach((tab, index) => {
 //===========================
 const nextArrow = document.querySelector('.fa-chevron-right');
 const prevArrow = document.querySelector('.fa-chevron-left');
+const cards = document.querySelectorAll('.bestselling__card');
+
+let current = 0;
+
+nextArrow.onclick = () => {
+  current++;
+  for (let i of cards) {
+    if (current === 0) {
+      i.style.left = '0px';
+    }
+    if (current === 1) {
+      i.style.left = '-250px';
+    }
+    if (current === 2) {
+      i.style.left = '-500px';
+    }
+    if (current === 3) {
+      i.style.left = '-750px';
+    }
+    if (current === 4) {
+      i.style.left = '-1000px';
+    }
+    if (current > 4) {
+      current = 4;
+    }
+  }
+};
+prevArrow.onclick = () => {
+  current--;
+  for (let i of cards) {
+    if (current === 0) {
+      i.style.left = '0px';
+    }
+    if (current === 1) {
+      i.style.left = '-250px';
+    }
+    if (current === 2) {
+      i.style.left = '-500px';
+    }
+    if (current === 3) {
+      i.style.left = '-750px';
+    }
+  
+    if (current < 0) {
+      current = 0;
+    }
+  }
+};

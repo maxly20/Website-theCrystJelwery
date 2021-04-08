@@ -832,15 +832,18 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  overflow: hidden;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  overflow-x: auto;
+  margin: 0 auto;
 }
 
 .bestselling__card {
   min-width: 250px;
   height: 363px;
+  position: relative;
+  left: 0;
   padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -857,6 +860,8 @@
           justify-content: space-between;
   margin-top: 1rem;
   overflow: hidden;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   cursor: pointer;
 }
 
