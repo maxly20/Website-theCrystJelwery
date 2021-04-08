@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Train+One&display=swap");
 .header {
   width: 100vw;
   display: -webkit-box;
@@ -190,6 +191,8 @@
   font-weight: 300;
   text-transform: uppercase;
   font-size: 2rem;
+  cursor: pointer;
+  font-family: 'Train One', cursive;
 }
 
 .header__info__right {
@@ -1253,14 +1256,262 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 5rem;
+  margin-top: 5rem;
+}
+
+.footer__top {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer__about {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.footer__about h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.footer__about p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 0.3rem;
+  color: rgba(255, 255, 255, 0.436);
+}
+
+.footer__about .footer__about__links {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+.footer__about .footer__about__links i {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 5rem;
-  margin-top: 5rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  color: white;
+  background-color: #2d2d2d;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.footer__about .footer__about__links i:hover {
+  background-color: #a87419;
+}
+
+.footer__info,
+.footer__acount {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.footer__info h2,
+.footer__acount h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.footer__info p,
+.footer__acount p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 0.3rem;
+  color: rgba(255, 255, 255, 0.436);
+  cursor: pointer;
+}
+
+.footer__info p:hover,
+.footer__acount p:hover {
+  color: #a87419;
+}
+
+.footer__toprated {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.footer__toprated h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.toprated__products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.toprated__products img {
+  width: 92px;
+  height: 92px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.toprated__info p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.347);
+  margin-bottom: 0.2rem;
+  cursor: pointer;
+}
+
+.toprated__info h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.toprated__info h3:hover {
+  color: #a87419;
+}
+
+.toprated__info h4 {
+  color: #a87419;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.toprated__info h4 span {
+  color: rgba(255, 255, 255, 0.347);
+  text-decoration: line-through;
+  margin-right: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.footer__bottom {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__bottom p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.436);
+}
+
+.footer__bottom p span {
+  color: #a87419;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.footer__payment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.footer__payment i {
+  font-size: 2rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.footer__payment i:hover {
+  color: #a87419;
 }
 
 *,
