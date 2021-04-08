@@ -65,3 +65,9 @@ tabs.forEach((tab, index) => {
     pane.classList.add('active');
   };
 });
+
+//===========================
+//       BEST SELLING SLIDER
+//===========================
+const nextArrow = document.querySelector('.fa-chevron-right');
+const prevArrow = document.querySelector('.fa-chevron-left');
