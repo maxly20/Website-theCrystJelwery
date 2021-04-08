@@ -1045,6 +1045,22 @@
 .magazine {
   min-height: 100vh;
   width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 5rem;
+  border-bottom: 1px solid #2d2d2d;
+  margin-top: 7rem;
 }
 
 .magazine__top {
@@ -1147,6 +1163,80 @@
   background-color: #a87419;
   padding: 0 2rem;
   cursor: pointer;
+}
+
+.magazine__bottom {
+  width: 95vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.magazine__bottom__left,
+.magazine__bottom__right {
+  width: 930px;
+  height: 350px;
+  position: relative;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.magazine__bottom__left:hover .magazine__content,
+.magazine__bottom__right:hover .magazine__content {
+  opacity: 1;
+}
+
+.magazine__bottom__left img,
+.magazine__bottom__right img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
+.magazine__content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.63);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.magazine__content h3 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.magazine__content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 1.2rem;
 }
 
 *,
