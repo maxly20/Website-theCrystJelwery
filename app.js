@@ -113,7 +113,7 @@ prevArrow.onclick = () => {
     if (current === 3) {
       i.style.left = '-750px';
     }
-  
+
     if (current < 0) {
       current = 0;
     }
