@@ -119,3 +119,31 @@ prevArrow.onclick = () => {
     }
   }
 };
+//===========================
+//       UPDATES SLIDER
+//===========================
+$('.updates__slider').owlCarousel({
+  autoplay: true,
+  loop: true,
+  nav: true,
+  autoplayTimeout: 3000,
+  items: 3,
+  dots: false,
+  margin: 30,
+  navText: [
+    '<i class="fas fa-chevron-left"></i>',
+    '<i class="fas fa-chevron-right"></i>',
+  ],
+  responsiveClass: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    768: {
+      items: 2,
+    },
+    992: {
+      items: 3,
+    },
+  },
+});
