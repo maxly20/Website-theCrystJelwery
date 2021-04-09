@@ -1491,6 +1491,13 @@
   cursor: pointer;
 }
 
+.footer__bottom p a {
+  color: #a87419;
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
 .footer__payment {
   display: -webkit-box;
   display: -ms-flexbox;
