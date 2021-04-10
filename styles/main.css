@@ -421,9 +421,18 @@
   color: #a87419;
 }
 
+.txt button {
+  padding: 1rem 3rem;
+  margin-top: 1rem;
+  background-color: #a87419;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
 @-webkit-keyframes posi {
   from {
-    left: 20vw;
+    left: -20vw;
   }
   to {
     left: 10vw;
@@ -432,7 +441,7 @@
 
 @keyframes posi {
   from {
-    left: 20vw;
+    left: -20vw;
   }
   to {
     left: 10vw;
